@@ -1,0 +1,381 @@
+.boder {
+  border: 1px solid black;
+}
+
+/* ________________________________ANIMATIONs________________________________ */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.5s ease-in 0.3s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation: slideInRight 0.5s ease-in 0.3s;
+}
+
+/* ________________________________NAVBAR________________________________ */
+
+.navbar-div {
+  position: sticky;
+
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container > a,
+.menu-slot a,
+.nav-container > div > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  width: 86.5%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.nav-logo {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-slot {
+  margin-right: 2rem;
+  padding: 6px 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-slot:hover {
+  transform: translateY(-7px);
+  transition: 0.3s;
+}
+
+/* ________________________________HERO________________________________ */
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  background: url("../assets/img/longHouse.jpg") center/cover no-repeat;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  top: 0;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #fff, transparent);
+  z-index: 1000;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 68px;
+}
+
+.VRbutton {
+  align-self: center;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+
+  font-size: small;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ________________________________ABOUT________________________________ */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.about-head {
+  width: 40%;
+  font-size: 26px;
+}
+
+.abt-empty-div {
+}
+
+.about-p {
+  width: 40%;
+}
+
+/* ________________________________INDIGROUP________________________________ */
+
+.indigrid-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  display: grid;
+  grid-template-columns: 100px, 100px, 100px, 100px, 100px, 100px;
+  grid-template-rows: 100px, 100px, 100px, 100px, 100px, 100px;
+
+  gap: 6px;
+}
+
+.indigrid-item1 {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+}
+
+.indigrid-item2 {
+  grid-row: 4 / 7;
+  grid-column: 1 / 4;
+}
+
+.indigrid-item3 {
+  grid-row: 1 / 4;
+  grid-column: 4 / 7;
+}
+
+.indigrid-item4 {
+  grid-row: 4 / 7;
+  grid-column: 4 / 7;
+}
+
+.indigrid-item1,
+.indigrid-item2,
+.indigrid-item3,
+.indigrid-item4 {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 1rem;
+}
+
+.indigrid-item1 img,
+.indigrid-item2 img,
+.indigrid-item3 img,
+.indigrid-item4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.indigrid-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.indigrid-item1 p,
+.indigrid-item2 p,
+.indigrid-item3 p,
+.indigrid-item4 p {
+  margin: 0;
+}
+
+.indigrid-item1 h3,
+.indigrid-item2 h3,
+.indigrid-item3 h3,
+.indigrid-item4 h3 {
+  font-size: 30px;
+}
+
+/* ________________________________VENDORS________________________________ */
+
+.vendors-section {
+  background-color: #f7f7f7;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.vendors-head {
+  margin-left: 5rem;
+  color: #1C1D1F;
+}
+
+.vendors-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.ven-box {
+  border-radius: 30px;
+  /* padding: 1rem; */
+  margin: 1rem;
+  width: 300px;
+  height: 540px;
+
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  background-color: #fff;  
+}
+
+.ven-title {
+  padding-left: 1rem;
+}
+
+.ven-content {
+  padding: 1rem;
+}
+
+.ven-product {
+  padding-left: 1rem;
+}
+
+
+.vendors-link {
+  margin-left: 5rem;
+  color: #1C1D1F;
+  font-weight: 400;
+
+  margin-top: 3rem;
+}
+
+.image-container {
+  width: 100%;.image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.go-btn {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.go-btn button{
+  
+  align-self: center;
+  width: 100px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: small;
+  font-weight: 700;
+  color: #000;
+}
+
+
+/* ________________________________CONTACT________________________________ */
+
+.contact-section {
+  background-color: #111;
+  padding-bottom: 2rem;
+  display: flex ;
+  justify-content: space-around;
+}
+
+
+.contact-container {
+
+  color: #fff;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.contact-input {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form button {
+  width: 70px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #1c1d1f;
+}
+
+.contact-element {
+  padding-top: 1rem;
+}
+
+
